@@ -7,7 +7,6 @@
 
 main {
     width: 100%;
-    background-color: #F5F5F5;
 }
 
 .bgc_car {
@@ -17,6 +16,7 @@ main {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    background-color: #f5f5f5;
 }
 
 .container {
@@ -249,6 +249,8 @@ nav {
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 2.5px;
+    display: flex;
+    align-items: center;
 }
 
 .inner_our_promise > p:first-child::before {
@@ -296,4 +298,151 @@ nav {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.15px;
+    margin-top: 20px;
 }
+
+/*-----------------------------Video page -----------------------------*/
+
+.video_page {
+    margin-top: 122px;
+}
+
+/*----------------------------------- Our services -----------------------------------*/
+
+.our_services_wrapper {
+    width: 1440px;
+    background-color: #f5f5f5;
+    background: url(images/gearsmirror.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.our_services_wrapper_two {
+    background: url(images/gearsmirrortwo.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.our_services {
+    padding: 110px 210px 0 210px;
+    display: flex;
+    flex-direction: column;
+}
+
+.our_services > p:first-child {
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    display: flex;
+    align-items: center;
+}
+
+.our_services > p:first-child::before {
+    content: url(images/icons/overline.png);
+}
+
+.our_services > p:nth-child(2) {
+    margin-top: 33px;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #02133C;
+    margin-bottom: 78px;
+}
+
+.our_services_boxes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.boxes_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.our_service_box {
+    width: 324px;
+    height: 340px;
+}
+
+.our_services_boxes > .our_service_box {
+    margin-left: 24px;
+}
+
+.our_services_boxes > .our_service_box:first-child {
+    margin-left: 0;
+}
+
+.our_services_boxes > .our_service_box:nth-child(4) {
+    margin-left: 0;
+}
+
+.our_service_box:nth-child(n+4){
+    margin-top: 24px;
+}
+
+.our_service_box:nth-child(2){
+    box-shadow: 0px 16px 24px 0px #26262633;
+    box-shadow: 0px 8px 16px 0px #2626263D;
+}
+
+.inner_box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 44px 50px 43px;
+    background-color: #fff;
+}
+
+
+.inner_box > p:nth-of-type(1) {
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 26px;
+    color: #02133C;
+    margin-top: 33px;
+}
+
+.inner_box > p:nth-of-type(2){
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #4B4B4B;
+    margin-top: 20px;
+}
+
+.btn_learn {
+    margin: 66px auto 122px;
+}
+
+.btn_learn_more {
+    padding-left: 19px;
+    color: #fff;
+    background-color: #C40B0B;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    width: 145px;
+    text-transform: uppercase;
+}
+
+.btn_learn_image {
+    height: 48px;
+    width: 43px;
+}
+
+
+/*------------------------blue bgc ---------------------------*/
+
+/* .blue_bgc {
+    width: 1440px;
+    height: 980px;
+    background-color: #02133C;
+} */
