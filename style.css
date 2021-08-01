@@ -17,8 +17,6 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #f5f5f5;
-
-    padding-bottom: 100px;
 }
 
 .container {
@@ -65,11 +63,11 @@ header {
 }
 
 .services::before {
-    content: url(./images/icons/time.png);
+    content: url(./images/icons/access_time_24px.svg);
 }
 
 .call::before {
-    content: url(./images/icons/phone.png);
+    content: url(./images/icons/phone_24px.svg);
 }
 
 .btn_wrapper {
@@ -107,6 +105,8 @@ nav {
     margin-left: 37px;
     font-weight: 700;
     font-size: 14px;
+    display: flex;
+    align-items: center;
 }
 
 .nav_list > li:first-child {
@@ -114,7 +114,8 @@ nav {
 }
 
 .nav_list > li:nth-child(4n+1)::after {
-    content: url(./images/icons/expand_more_24px.png);
+    content: url(./images/icons/expand_more_24px.svg);
+    margin-top: 5px;
     color: #C40B0B;
 }
 
@@ -205,7 +206,8 @@ nav {
 }
 
 .bgc_white > p:first-child::before {
-    content: url(images/icons/overline.png);
+    content: url(images/icons/Overline\ Mark.svg);
+    margin-top: 6px;
 }
 
 .bgc_white > p:nth-child(2) {
@@ -257,7 +259,8 @@ nav {
 }
 
 .inner_our_promise > p:first-child::before {
-    content: url(images/icons/overline.png);
+    content: url(images/icons/Overline\ Mark.svg);
+    margin-top: 6px;
 }
 
 .inner_our_promise> p:last-child {
@@ -343,6 +346,7 @@ nav {
 
 .our_services > p:first-child::before {
     content: url(images/icons/Overline\ Mark.svg);
+    margin-top: 6px;
 }
 
 .our_services > p:nth-child(2) {
@@ -433,11 +437,11 @@ nav {
     height: 48px;
     width: 145px;
     text-transform: uppercase;
+    font-size: 12px;
 }
 
 .btn_learn_image {
     height: 48px;
-    width: 43px;
 }
 
 
@@ -542,6 +546,7 @@ nav {
     align-items: center;
     margin-top: 30px;
     height: 48px;
+    font-size: 12px;
 }
 
 .btn_inner_make_image { 
@@ -639,6 +644,7 @@ nav {
 
 .gallery_content > p:first-child::before {
     content: url(images/icons/Overline\ Mark.svg);
+    margin-top: 6px;
 }
 
 .gallery_content > p:nth-child(2){
@@ -715,6 +721,7 @@ nav {
 
 .customer_block > p:first-child::before {
     content: url(images/icons/Overline\ Mark.svg);
+    margin-top: 6px;
 } 
 
 .customer_block > p:nth-child(2){
@@ -769,6 +776,8 @@ nav {
     height: 608px;
     display: flex;
     position: relative;
+    flex-direction: column; 
+    /* align-items: center; */
 }
 
 .our_impact_block {
@@ -796,6 +805,7 @@ nav {
 
 .first_side > p:first-child::before {
     content: url(./images/icons/Overline\ Mark.svg);
+    margin-top: 6px;
 }
 
 .first_side > p:last-child {
@@ -835,4 +845,234 @@ nav {
     color: #f5f5f5;
 }
 
-/* ----------------white-window------------------------------*/
+/* -----------------------white-window------------------------------*/
+
+.white_window {
+    margin: 134px auto;
+    width: 1020px;
+    height: 150px;
+    background-color: #fff;
+}
+
+.window_inner {
+    padding: 43px 76px 48px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.window_inner > p {
+    width: 550px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+    color: #02133C;
+}
+
+.window_inner > p:first-child {
+    display: flex;
+}
+
+.window_btn {
+    width: 211px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    background-color: #C40B0B;
+    padding-left: 19px;
+    font-size: 12px;
+    border: none;
+}
+
+
+/* -------------------------bottom info--------------------------------*/
+
+.bottom_info {
+    margin: 168px auto;
+    width: 1020px;
+    display: flex;
+}
+
+.logo_and_others {
+    display: flex;
+    flex-direction: column;
+    width: 235px;
+}
+
+.logo_vector {
+    width: 39px;
+    height: 39px;
+}
+
+.logo_and_others > div {
+    display: flex;
+    align-items: center;
+}
+
+.logo_and_others > div > .logo_text {
+    color: #02133C;
+    font-size: 32px;
+    font-weight: 900;
+    margin-left: 5px;
+}
+
+.logo_and_others_text {
+    margin-top: 23px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    color: #4B4B4B;
+}
+
+.soc_net_logos {
+    margin-top: 33px;
+    
+}
+
+.soc_net_list_logos {
+    display: flex;
+    list-style-type: none;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.second_side {
+    display: flex;
+    flex-direction: column;
+    margin-left: 124px;
+    width: 159px;
+}
+
+.second_side > div > p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.15px;    
+    color: #4B4B4B;
+    text-transform: uppercase;
+}
+
+.list_serv > li,
+.third_side_list > li {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.15px;    
+    color: #4B4B4B;
+}
+
+.div_serv {
+    margin-top: 58px;
+}
+
+.list_serv {
+    list-style-type: none;
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.list_serv > li:nth-child(1n+1) {
+    margin-top: 14px;
+}
+
+.third_side {
+    margin-left: 87px;
+    margin-top: 78px;
+}
+
+.third_side_list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    height: 68px;
+    justify-content: space-around;
+}
+
+.third_side_list > li:nth-child(1n+1) {
+    margin-top: 14px;
+}
+
+.fourth_side {
+    margin-left: 198px;
+}
+
+.fourth_side > div > p {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    color: #4B4B4B;
+}
+
+.contacts_div {
+    margin-top: 28px;
+}
+
+.contacts_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contacts_list > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contacts_list > div::before {
+    margin-right: 18px;
+}
+
+.contacts_list > div:not(:first-child) {
+    margin-top: 16px;
+}
+
+.contacts_list > div > p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    color: #4B4B4B;
+}
+
+.contacts_list > div:nth-child(1)::before {
+    content: url(./images/contacts_icons/place_24px.svg);
+}
+
+.contacts_list > div:nth-child(2)::before {
+    content: url(./images/contacts_icons/smartphone_24px.svg);
+}
+
+.contacts_list > div:nth-child(3)::before {
+    content: url(./images/contacts_icons/email_24px.svg);
+}
+
+.contacts_list > div:last-child::before {
+    content: url(./images//contacts_icons/timer_24px.svg);
+}
+
+/* -------------------------footer--------------------------------*/
+
+.footer {
+    height: 60px;
+    background-color: #02133C;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer > p {
+    color: #959595;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.15px;
+}
