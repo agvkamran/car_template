@@ -17,6 +17,8 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #f5f5f5;
+
+    padding-bottom: 100px;
 }
 
 .container {
@@ -463,16 +465,6 @@ nav {
     right: 0;
 }
 
-.bgc_mirror_gears_bottom {
-    position: absolute;
-    background: url(images/gearsmirrortwo.png);
-    background-repeat: no-repeat;
-    top: 460px;
-    right: 0;
-    width: 1440px;
-    height: 980px;
-}
-
 .form {
     margin: 130px 210px 130px 210px;
     width: 1020px;
@@ -590,16 +582,49 @@ nav {
     font-style: normal;
 }
 
+.bgc_gears_inner {
+    position: absolute;
+    width: 642px;
+    height: 450px;
+    background: url(./images/gearsmirrortwo.png);
+    background-repeat: no-repeat;
+    bottom: 75px;
+    left: 0;
+}
 
 /*----------------------------Gallery-----------------------------------*/
 
+.bgc_gears_last {
+    width: 1440px;
+    height: 867px;
+    background: url(./images/gearsmirrortwo.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
 .gallery {
+    margin: 0 auto;
     background-color: #fff;
-    height: 820px;
     width: 1020px;
+    height: 700px;
+    margin-top: -84px;
     display: flex;
-    align-items: center;
+    z-index: 100;
     justify-content: center;
+    position: relative;
+}
+
+.gallery_inner {
+    padding-top: 99px;
+    padding-left: 87px;
+    padding-right: 87px;
+    display: flex; 
+    flex-direction: column;
+}
+
+.gallery_content {
+    width: 583px;
+    height: 134px;
 }
 
 .gallery_content > p:first-child {
@@ -615,3 +640,199 @@ nav {
 .gallery_content > p:first-child::before {
     content: url(images/icons/Overline\ Mark.svg);
 }
+
+.gallery_content > p:nth-child(2){
+    margin-top: 33px;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #02133C;
+} 
+
+.live_streams {
+    position: relative;
+    margin-top: 44px;
+    width: 846px;
+    height: 24px;
+}
+
+.streams {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #02133C;
+}
+
+.hr {
+    width: 846px;
+    height: 1px;
+    color: #D5D5D5;
+    background-color: #D5D5D5;
+    margin-top: 8px;
+    position: relative;
+}
+
+.active_item {
+    position: absolute;
+    top: -2px;
+    left: 162px;
+    width: 200px;
+    height: 4px;
+    background-color: #C40B0B;
+}
+
+.image_wrapper {
+    margin-top: 50px;
+}
+
+/*---------------------our-customers----------------------------*/
+.our_customers {
+    display: flex;
+    justify-content: center;
+} 
+
+.customer_blocks {
+    margin-top: 13px;
+    width: 1020px;
+    display: flex;
+}
+
+.customer_block {
+    width: 324px;
+    height: 340px;
+}
+
+.customer_block > p:first-child{
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    display: flex;
+    align-items: center;
+}
+
+.customer_block > p:first-child::before {
+    content: url(images/icons/Overline\ Mark.svg);
+} 
+
+.customer_block > p:nth-child(2){
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #02133C;
+}
+
+.customer_block_people {
+    width: 324px;
+    height: 340px;
+    background-color: #fff;
+    color: #4B4B4B;
+}
+
+.customer_block_people {
+    margin-left: 24px;
+}
+
+.block_people {
+    padding: 50px 44px 40px 43px;
+    height: 189px;
+}
+
+.people_flex {
+    display: flex;
+    align-items: center;  
+    margin-top: 55px;
+}
+
+.people_flex > p {
+    margin-left: 17px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+
+/* --------------------------------our-impact-----------------------*/
+
+.our_impact {
+    margin-top: 210px;
+    width: 1440px;
+    height: 608px;
+    background-color: #02133C;
+}
+
+.our_impact_bgc {
+    background: url(./images/blue.png);
+    width: 1440px;
+    height: 608px;
+    display: flex;
+    position: relative;
+}
+
+.our_impact_block {
+    display: flex;
+    flex-direction: column;
+}
+
+.first_side {
+    width: 411px;
+    height: 129px;
+    margin-top: 112px;
+    margin-left: 210px; 
+    position: relative;
+}
+
+.first_side > p:first-child {
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    color: #D5D5D5;
+    display: flex;
+    align-items: center;
+}
+
+.first_side > p:first-child::before {
+    content: url(./images/icons/Overline\ Mark.svg);
+}
+
+.first_side > p:last-child {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #fff;
+    position: relative;
+}
+
+.our_impact_image {
+    position: absolute;
+    right: 210px;
+    top: -85px;
+}
+
+.car_service {
+    margin-top: 79px;
+    width: 1020px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 210px;
+    justify-content: space-between;
+}
+
+.car_service_text > p:first-child {
+    color: #C40B0B;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.car_service_text > p:last-child {
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #f5f5f5;
+}
+
+/* ----------------white-window------------------------------*/
