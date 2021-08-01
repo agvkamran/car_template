@@ -41,6 +41,7 @@ header {
     display: flex;
     justify-content: center;
 }
+
 .service_hour{
     color: #fff;
     width: 206px;
@@ -64,6 +65,14 @@ header {
 
 .services::before {
     content: url(./images/icons/access_time_24px.svg);
+}
+
+.serv {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    color: #Fff;
 }
 
 .call::before {
