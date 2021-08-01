@@ -133,6 +133,8 @@ nav {
 .number {
     position: absolute;
     background-color: #C40B0B;
+    width: 16px;
+    height: 16px;
     color: white;
     border-radius: 50%;
     padding: 5px;
@@ -240,7 +242,6 @@ nav {
 .inner_our_promise {
     width: 583px;
     height: 134px;
-    /* background-color: blue; */
 }
 
 .inner_our_promise > p:first-child {
@@ -311,7 +312,6 @@ nav {
 
 .our_services_wrapper {
     width: 1440px;
-    background-color: #f5f5f5;
     background: url(images/gearsmirror.png);
     background-repeat: no-repeat;
     background-position: left top;
@@ -340,7 +340,7 @@ nav {
 }
 
 .our_services > p:first-child::before {
-    content: url(images/icons/overline.png);
+    content: url(images/icons/Overline\ Mark.svg);
 }
 
 .our_services > p:nth-child(2) {
@@ -441,8 +441,177 @@ nav {
 
 /*------------------------blue bgc ---------------------------*/
 
-/* .blue_bgc {
+.blue_bgc {
     width: 1440px;
     height: 980px;
     background-color: #02133C;
-} */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bgc_mirror_gears {
+    width: 1440px;
+    height: 980px;
+    background: url(images/gearsmirrorthree.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bgc_mirror_gears_bottom {
+    position: absolute;
+    background: url(images/gearsmirrortwo.png);
+    background-repeat: no-repeat;
+    top: 460px;
+    right: 0;
+    width: 1440px;
+    height: 980px;
+}
+
+.form {
+    margin: 130px 210px 130px 210px;
+    width: 1020px;
+    height: 640px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inner_form {
+    padding: 76px 57.50px;
+    width: 585px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.inner_form > p:first-child {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 900;
+    color: #02133C;
+}
+
+.inputs_wrapper {
+    margin-top: 43px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.inputs_wrapper > .inputs:nth-child(even){
+    margin-left: 21.44px;
+}
+
+.inputs_wrapper > .inputs:nth-child(n+3){
+    margin-top: 22px;
+}
+
+
+.inputs, .textarea {
+    border: none;
+    background-color: #F5F5F5;
+    outline: none;
+    color: #959595;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    padding-left: 24px;
+}
+
+.inputs {
+    width: 224px;
+    height: 48px;
+}
+
+.textarea {
+    margin-top: 22px;
+    max-width: 470px;
+    min-width: 470px;
+    min-height: 180px;
+    max-height: 180px;
+    padding-top: 17px;
+}
+
+.btn_inner_make {
+    margin-left: 250px;
+    padding-left: 19px;
+    color: #fff;
+    background-color: #C40B0B;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    height: 48px;
+}
+
+.btn_inner_make_image { 
+    height: 48px;
+}
+
+.right_side {
+    width: 324px;
+    height: 280px;
+    margin-left: 111px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right_side > p:first-child {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.right_side > p:nth-child(2) {
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 56px;
+    margin-top: 46px;
+    color: #C40B0B;
+}
+
+.right_side > p:nth-child(3) {
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 26px;
+    margin-top: 46px;
+    color: #FFFFFF;
+    font-style: normal;
+}
+
+
+/*----------------------------Gallery-----------------------------------*/
+
+.gallery {
+    background-color: #fff;
+    height: 820px;
+    width: 1020px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery_content > p:first-child {
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    display: flex;
+    align-items: center;
+}
+
+.gallery_content > p:first-child::before {
+    content: url(images/icons/Overline\ Mark.svg);
+}
