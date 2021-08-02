@@ -85,7 +85,7 @@ header {
     width: 211px;
 }
 
-.btn_make {
+.red_btn {
     padding-left: 19px;
     color: #fff;
     background-color: #C40B0B;
@@ -96,10 +96,12 @@ header {
     cursor: pointer;
 }
 
-.btn_make:hover {
+.red_btn:hover {
     background-color: #fff;
     color: #C40B0B;
 }
+
+
 nav {
     width: 1020px;
     height: 60px;
@@ -148,17 +150,26 @@ nav {
     position: relative;
 }
 
-.number {
+.red_circle {
     position: absolute;
     background-color: #C40B0B;
     width: 16px;
     height: 16px;
-    color: white;
+    color: red;
     border-radius: 50%;
     padding: 5px;
     right: -8px;
-    top: -10px;
+    top: -9px;
 }
+
+.number {
+    position: absolute;
+    font-size: 11px;
+    color: #fff;
+    top: -7px;
+    right: -3.5px;
+}
+
 
 /* -----------------------------------content wrapper---------------------------------------------*/
 
@@ -176,22 +187,11 @@ nav {
 }
 
 .btn_make2 {
-    padding-left: 19px;
-    color: #fff;
-    background-color: #C40B0B;
-    border: none;
-    display: flex;
-    align-items: center;
     margin: 40px 0 0 210px;
     height: 48px;
-    transition: 0.5s all ease;
-    cursor: pointer;
 }
 
-.btn_make2:hover {
-    background-color: #fff;
-    color: #C40B0B;
-}
+
 .btn_make2_image { 
     height: 48px;
 }
@@ -577,7 +577,7 @@ nav {
 }
 
 .btn_inner_make {
-    margin-left: 250px;
+    margin-left: 263px;
     padding-left: 19px;
     color: #fff;
     background-color: #C40B0B;
@@ -719,6 +719,21 @@ nav {
     color: #02133C;
 }
 
+.streams > li:not(:first-child){
+    position: relative;
+}
+
+.streams > li:nth-child(2){
+    color: #C40B0B;
+}
+
+.green_circle1, .green_circle2, .grey_circle {
+    position: absolute;
+    top: -9px;
+    right: -15px;
+}
+
+
 .streams > li {
     cursor: pointer;
 }
@@ -741,11 +756,22 @@ nav {
     background-color: #C40B0B;
 }
 
+.bgc_live {
+    position: relative;
+}
+
+.icon_live {
+    position: absolute;
+    top: 360px;
+    right: 105px;
+}
+
 .image_wrapper {
     margin-top: 50px;
 }
 
 /*---------------------our-customers----------------------------*/
+
 .our_customers {
     display: flex;
     justify-content: center;
@@ -1006,6 +1032,7 @@ nav {
     flex-direction: column;
     margin-left: 124px;
     width: 159px;
+    margin-top: 18px;
 }
 
 .second_side > div > p {
@@ -1045,6 +1072,7 @@ nav {
 .third_side {
     margin-left: 87px;
     margin-top: 78px;
+    margin-top: 98px;
 }
 
 .third_side_list {
@@ -1070,10 +1098,11 @@ nav {
     line-height: 22px;
     letter-spacing: 0.15px;
     color: #4B4B4B;
+    margin-top: 20px;
 }
 
 .contacts_div {
-    margin-top: 28px;
+    margin-top: 18px;
 }
 
 .contacts_list {
@@ -1123,14 +1152,18 @@ nav {
 /* -------------------------footer--------------------------------*/
 
 .footer {
-    height: 60px;
     background-color: #02133C;
+}
+.inner_footer {
+    margin: 0 auto;
+    width: 1020px;
+    height: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
-.footer > p {
+.inner_footer > p {
     color: #959595;
     font-weight: 400;
     font-size: 12px;
