@@ -185,6 +185,7 @@ nav {
     margin: 40px 0 0 210px;
     height: 48px;
     transition: 0.5s all ease;
+    cursor: pointer;
 }
 
 .btn_make2:hover {
@@ -716,6 +717,10 @@ nav {
     align-items: center;
     justify-content: space-around;
     color: #02133C;
+}
+
+.streams > li {
+    cursor: pointer;
 }
 
 .hr {
